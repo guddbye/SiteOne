@@ -2,7 +2,7 @@
 <html>
 <head>
 
-<title>Gunther's Guitar Shop</title>
+<title> Gunther's Guitar Shop </title>
 
 </head>
 <body>
