@@ -19,7 +19,7 @@
 <section class="Main-Section">
 <img src="https://via.placeholder.com/350x150"> </img>
 </section>
-<section class"Smaller Section">
+
 <ul>
 <li><image />
 <p></p></li>
@@ -29,11 +29,9 @@
 
 <li><image />
 <p></p></li>
-</section>
 
+<img src="https://via.placeholder.com/200x100"></img><img src="https://via.placeholder.com/200x100"></img>
 </main>
-
-<img src="https://via.placeholder.com/200x100"> </img><img src="https://via.placeholder.com/200x100"> </img>
 <footer>&copy;<p>Gunther's Guitars 2022</p>
 </footer>
 </body>
