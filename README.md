@@ -34,7 +34,7 @@
 </main>
 
 <img src="https://via.placeholder.com/200x100"> </img><img src="https://via.placeholder.com/200x100"> </img>
-<footer> &copy; <p>Gunther's Guitars 2022</p>
+<footer>&copy;<p>Gunther's Guitars 2022</p>
 </footer>
 </body>
 </html>
