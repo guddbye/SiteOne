@@ -5,8 +5,9 @@ body {
   display: grid;
   grid-template-areas: 
     "header header header"
-    "nav article ads"
-    "nav footer footer";
+    "leftmenu catalog rightmenu"
+    "leftmenu footer footer";
+  
   grid-template-rows: 80px 1fr 70px;  
   grid-template-columns: 20% 1fr 15%;
   grid-row-gap: 10px;
@@ -14,8 +15,9 @@ body {
   height: 100vh;
   margin: 0;
   }  
-header, footer, article, nav, div {
-  padding: 1.2em;
+  
+header, footer, catalog, leftmenu, div {
+ 
   background: gold;
   }
 #pageHeader {
@@ -25,32 +27,34 @@ header, footer, article, nav, div {
   grid-area: footer;
   }
 #mainArticle { 
-  grid-area: article;      
+  grid-area: catalog;      
   }
 #mainNav { 
-  grid-area: nav; 
+  grid-area: leftmenu; 
   }
 #siteAds { 
-  grid-area: ads; 
+  grid-area: rightmenu; 
   } 
 
 (max-width: 575px) {
   body { 
     grid-template-areas: 
       "header"
-      "article"
-      "ads"
-      "nav"
+      "catalog"
+      "rightmenu"
+      "leftmenu"
       "footer";
     grid-template-rows: 80px 1fr 70px 1fr 70px;  
     grid-template-columns: 1fr;
  }
 }
+  
 </style>
 <body>
+  
   <header id="pageHeader">Gunther's Corner</header>
-  <article id="mainArticle">Catalog</article>
-  <nav id="mainNav">Right Menu</nav>
-  <div id="siteAds">Left Menu</div>
+  <article id="catalog">Catalog</article>
+  <nav id="leftmenu">Right Menu</nav>
+  <div id="rightmenu">Left Menu</div>
     <footer id="pageFooter"><p>&copy; Gunter's Corner</p></footer>
 </body>
