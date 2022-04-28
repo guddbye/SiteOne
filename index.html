@@ -7,15 +7,13 @@ body {
     "header header header"
     "leftmenu catalog rightmenu"
     "leftmenu footer footer";
-  
   grid-template-rows: 80px 1fr 70px;  
   grid-template-columns: 20% 1fr 15%;
   grid-row-gap: 10px;
   grid-column-gap: 10px;
   height: 100vh;
   margin: 0;
-  }  
-  
+  } 
 header, footer, catalog, leftmenu, div {
  padding: 1.2em;
   background: gold;
@@ -35,7 +33,6 @@ header, footer, catalog, leftmenu, div {
 #siteAds { 
   grid-area: rightmenu; 
   } 
-
 (max-width: 575px) {
   body { 
     grid-template-areas: 
@@ -48,10 +45,8 @@ header, footer, catalog, leftmenu, div {
     grid-template-columns: 1fr;
  }
 }
-  
 </style>
 <body>
-  
   <header id="pageHeader">Gunther's Corner</header>
   <article id="catalog">Catalog</article>
   <nav id="leftmenu">Right Menu</nav>
