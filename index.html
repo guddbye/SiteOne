@@ -5,8 +5,8 @@ body {
   display: grid;
   grid-template-areas: 
     "header header header"
-    "leftmenu catalog rightmenu"
-    "leftmenu footer footer";
+    "nav article ads"
+    "nav footer footer";
   grid-template-rows: 80px 1fr 70px;  
   grid-template-columns: 20% 1fr 15%;
   grid-row-gap: 10px;
@@ -25,13 +25,13 @@ header, footer, catalog, leftmenu, div {
   grid-area: footer;
   }
 #mainArticle { 
-  grid-area: catalog;      
+  grid-area: article;      
   }
 #mainNav { 
-  grid-area: leftmenu; 
+  grid-area: nav; 
   }
 #siteAds { 
-  grid-area: rightmenu; 
+  grid-area: ads; 
   } 
 (max-width: 575px) {
   body { 
