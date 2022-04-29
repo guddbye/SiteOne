@@ -6,19 +6,19 @@ function popup(message){
 
     console.log(userName);
 
-    let place = alert("Hello " + userName + "! We sell guitars here.");
-    console.log("First response = " + place);
+    let looking = alert("Hello " + userName + "! We sell guitars here.");
+    console.log("First response = " + looking);
 
-    let answer;
-    while (answer !== "5") {
-    answer = prompt("Can I help you find a guitar?").toLowerCase();
-    console.log("User said: ", answer);
+    let response;
+    while (response !== "yes") {
+    response = prompt("Can I help you find a guitar?").toLowerCase();
+    document.write("<p>You said " + response + "</p>");
     }
 
-    console.log("We're out of the loop!")
-    
-    document.querySelector(".username").innerHTML = "<p id='username'>" + userName + "<p>";
+    document.write("<p>Something isn't working. </p>");
+    document.write("<p id='username'>" + userName + "<p>");
+
     }
 
-    popup("Hello, what is your name?")
+    popup("Hello, what is your name?");
 
