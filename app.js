@@ -1,23 +1,24 @@
 'use strict';
 
-var yourname = prompt("What is your name?");
+function popup(message){
 
-console.log(yourname);
+    let userName = prompt(message);
 
-if (yourname === "Brentice") {
-    console.log("Hello Brentice.");
-} else {
-    console.log("Welcome " + yourname + "! Welcome to Gunther's shop!");
-}
+    console.log(userName);
 
-document.write(yourname);
-let response = prompt("What are you looking for?");
-response.toLowerCase();
+    let place = alert("Hello " + userName + "! We sell guitars here.");
+    console.log("First response = " + place);
 
-if (response === "guitar") {
-    document.write("We can get you that!");
-} else if (response == "acoustic guitar") {
-    document.write("We have that as well!");
-} else {
-    document.write("We don't sell that.");
-}
+    let answer;
+    while (answer !== "5") {
+    answer = prompt("Can I help you find a guitar?").toLowerCase();
+    console.log("User said: ", answer);
+    }
+
+    console.log("We're out of the loop!")
+    
+    document.querySelector(".username").innerHTML = "<p id='username'>" + userName + "<p>";
+    }
+
+    popup("Hello, what is your name?")
+
