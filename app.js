@@ -1,25 +1,23 @@
 'use strict';
 
-var username = prompt("What is your name?");
+var yourname = prompt("What is your name?");
 
-console.log(username);
+console.log(yourname);
 
-if (username === "Brentice") {
+if (yourname === "Brentice") {
     console.log("Hello Brentice.");
 } else {
-    console.log("Welcome " + username + "!");
+    console.log("Welcome " + yourname + "! Welcome to Gunther's shop!");
 }
 
-document.write(username);
-
-let response = prompt("What is the best color?");
-
+document.write(yourname);
+let response = prompt("What are you looking for?");
 response.toLowerCase();
 
-if (response === "yellow") {
-    document.write("You are correct!");
-} else if (response == "black") {
-    document.write("You are also correct!");
+if (response === "guitar") {
+    document.write("We can get you that!");
+} else if (response == "acoustic guitar") {
+    document.write("We have that as well!");
 } else {
-    document.write("Yeah, that's not it.");
+    document.write("We don't sell that.");
 }
