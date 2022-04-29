@@ -1,31 +1,25 @@
 'use strict';
 
+var username = prompt("What is your name?");
 
-function greetings (name) {
+console.log(username);
 
-    let username = promt('What is your name?');
-    console.log('Hello, ' + username);
-
-    let time = primt('What time is it?');
-    let message;
-
-    if(time <= 11) {
-        message = 'Good morning!';
-        } else if (time < 18) {
-            message = 'Good afternoon!';
-        } else if(time <= 24) {
-            message = 'Good evening!';
-                    } else {
-                        message = "Maybe you don't know the time...";
-                    }
-
-                    document.write('Hello ' + username + '!' + message):
-    return username;
+if (username === "Brentice") {
+    console.log("Hello Brentice.");
+} else {
+    console.log("Welcome " + username + "!");
 }
 
+document.write(username);
 
-// calls the function with its own name.
-// gettings (username)
+let response = prompt("What is the best color?");
 
+response.toLowerCase();
 
-greetings()
+if (response === "yellow") {
+    document.write("You are correct!");
+} else if (response == "black") {
+    document.write("You are also correct!");
+} else {
+    document.write("Yeah, that's not it.");
+}
